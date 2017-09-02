@@ -35,11 +35,15 @@ async function handleDokaben (parameters) {
   const cs = parameters.text.split('')
   const emojis = new Set(cs.map(c => emojiTable[c]).filter(emoji => !!emoji))
   for (const emoji of emojis) {
-    await addEmoji(
-      parameters.channel_id,
-      history.messages[0].ts,
-      emoji
-    )
+    try {
+      await addEmoji(
+        parameters.channel_id,
+        history.messages[0].ts,
+        emoji
+      )
+    } catch (e) {
+      // Ignore errors, especially for duplicated emoji.
+    }
 
     await delay(300)
   }
