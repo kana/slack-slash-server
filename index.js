@@ -42,7 +42,7 @@ async function handleDokaben (parameters)
       emoji
     )
 
-    await delay(200)
+    await delay(300)
   }
 }
 
