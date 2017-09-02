@@ -1,0 +1,7 @@
+{
+  "name": "slack-slash-dokaben",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kana Natsuno <dev@whileimautomaton.net>",
+  "license": "MIT"
+}
