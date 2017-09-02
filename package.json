@@ -5,7 +5,8 @@
   "author": "Kana Natsuno <dev@whileimautomaton.net>",
   "license": "MIT",
   "engines": {
-    "node": "8.4.0"
+    "node": "8.4.0",
+    "yarn": "0.27.5"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
