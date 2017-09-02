@@ -68,7 +68,7 @@ function getEmojiTable () {
 }
 
 async function fetchChannelHistory (channelId) {
-  return await slack.channels.history({
+  return slack.channels.history({
     token: process.env.SLACK_TOKEN,
     channel: channelId,
     count: 1
@@ -76,7 +76,7 @@ async function fetchChannelHistory (channelId) {
 }
 
 async function addEmoji (channelId, timestamp, emoji) {
-  return await slack.reactions.add({
+  return slack.reactions.add({
     token: process.env.SLACK_TOKEN,
     channel: channelId,
     timestamp: timestamp,
