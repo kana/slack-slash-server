@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Kana Natsuno <dev@whileimautomaton.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "8.4.0"
+  }
 }
