@@ -28,8 +28,7 @@ app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'))
 })
 
-async function handleDokaben (parameters)
-{
+async function handleDokaben (parameters) {
   const history = await fetchChannelHistory(parameters.channel_id)
 
   const emojiTable = getEmojiTable()
@@ -46,8 +45,7 @@ async function handleDokaben (parameters)
   }
 }
 
-function getEmojiTable ()
-{
+function getEmojiTable () {
   return {
     'ー': 'dokaben--',
     'ア': 'dokaben-a',
@@ -69,8 +67,7 @@ function getEmojiTable ()
   }
 }
 
-async function fetchChannelHistory (channelId)
-{
+async function fetchChannelHistory (channelId) {
   return await slack.channels.history({
     token: process.env.SLACK_TOKEN,
     channel: channelId,
@@ -78,8 +75,7 @@ async function fetchChannelHistory (channelId)
   })
 }
 
-async function addEmoji (channelId, timestamp, emoji)
-{
+async function addEmoji (channelId, timestamp, emoji) {
   return await slack.reactions.add({
     token: process.env.SLACK_TOKEN,
     channel: channelId,
