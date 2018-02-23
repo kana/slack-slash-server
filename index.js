@@ -59,15 +59,19 @@ function getEmojiTable () {
     'カ': 'dokaben-ka',
     'キ': 'dokaben-ki',
     'コ': 'dokaben-ko',
+    'マ': 'dokaben-ma',
     'ナ': 'dokaben-na',
     'ン': 'dokaben-nn',
     'プ': 'dokaben-pu',
+    'ラ': 'dokaben-ra',
     'リ': 'dokaben-ri',
+    'ル': 'dokaben-ru',
     'セ': 'dokaben-se',
     'シ': 'dokaben-shi',
+    'ソ': 'dokaben-so',
     'ス': 'dokaben-su',
     'タ': 'dokaben-ta',
-    'ユ': 'dokaben-yu'
+    'ユ': 'dokaben-yu',
   }
 }
 
